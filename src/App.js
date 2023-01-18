@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+// import { useEffect, useState } from "react";
+import "./App.css";
+// import { client, urlFor } from "./client";
+import Slider from "./Slider";
 
 function App() {
+  // const [authors, setAuthors] = useState([{ name: "string" }]);
+  // const [images, setImages] = useState(null);
+
+  // const query = `*[_type == "author"]`;
+  // const slides = `*[_type == "slides"]`;
+
+  // useEffect(() => {
+  //   client
+  //     .fetch(slides)
+  //     .then((images) => {
+  //       setImages(images);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, [slides]);
+
+  // console.log(images);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider />
     </div>
   );
 }
 
 export default App;
+
+// {
+//   /* <h1>{authors[0].name}</h1> */
+// }
+// {
+//   /* {images && <img src={urlFor(images[0].imgUrl)} alt={images[0].title} />} */
+// }
